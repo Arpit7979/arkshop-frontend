@@ -33,7 +33,7 @@ function Register() {
         <input type="email" placeholder='Email' onChange={(e)=>setUser({...user,email:e.target.value})} />
         <input type="password" placeholder='password' onChange={(e)=>setUser({...user,password:e.target.value})} />
         {auth.registerStatus==="rejected"?<p style={{color:"red"}} >{auth.registerError}</p>:null}
-        <button type='submit'>{auth.registerStatus==="pending"?"submitting....":"submit"}</button>
+        <button className='all-btn' type='submit'>{auth.registerStatus==="pending"?"Submitting....":"Submit"}</button>
       </form>
     </div>
   )

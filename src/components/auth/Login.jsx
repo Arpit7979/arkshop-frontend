@@ -34,7 +34,7 @@ const handleformsubmit = (e)=>{
         <input type="email" placeholder='Email' onChange={(e)=>setUser({...user,email:e.target.value})} />
         <input type="password" placeholder='password' onChange={(e)=>setUser({...user,password:e.target.value})}/>
         {auth.loginStatus==="rejected"?<p style={{color:"red"}} >{auth.loginError}</p>:null}
-        <button type='submit'>{auth.registerStatus==="pending"?"submitting....":"submit"}</button>
+        <button className='all-btn' type='submit'>{auth.registerStatus==="pending"?"submitting....":"submit"}</button>
       </form>
       
     </div>

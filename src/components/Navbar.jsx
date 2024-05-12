@@ -10,11 +10,12 @@ const Navbar = () => {
   const item = useSelector(state => state.cart);
   return (
     <div className='Navbar'>
-     <Link to={'/'}><h2>Arpit Shop</h2></Link> 
+     <Link className='logo' to={'/'}><h2>Arpit Shop</h2></Link> 
       <div className='cart-logo'>
       <Link to="/cart"><h3>Cart </h3></Link>
       <h2>{item.cartTotalQuantity}</h2>
       </div>
+      <div className='nav-link'>
       {
         auth._id?<Link><h3 onClick={()=>dispatch(logoutUser(null))} >Logout</h3></Link>:
         (<div className='auth-button'>
@@ -22,7 +23,7 @@ const Navbar = () => {
         <Link to="/Login"><h3>Login</h3></Link>
         </div>)
       }
-      
+      </div>
     </div>
   )
 }

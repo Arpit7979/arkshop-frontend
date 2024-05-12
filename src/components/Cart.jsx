@@ -28,7 +28,7 @@ const Cart = () => {
 
           <h4>{item.price}</h4>
 
-          <button onClick={()=>dispatch(removeFromCart(item))} >Remove from Cart</button>
+          <button className='all-btn' onClick={()=>dispatch(removeFromCart(item))} >X</button>
        
         </div>
       ))}

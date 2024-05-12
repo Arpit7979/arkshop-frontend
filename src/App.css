@@ -13,15 +13,18 @@
   justify-content: space-around;
 }
 
+
 .home-card{
   width: 15%;
-  height: 60vh;
+  height: 70vh;
   padding: 1rem;
   border: 1px solid black;
   border-radius: 1rem;
   border-right: 6px solid grey;
   border-bottom: 5px solid grey;
 }
+
+
 .home-card:hover{
   border-right: 1px solid grey;
   border-bottom: 1px solid grey;
@@ -159,4 +162,105 @@
   border: 1px dotted green;
   border-radius: 10px;
   padding: 5px;
+}
+
+@media (max-width:450px) {
+  .home{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .home-card{
+    width: 85%;
+    height: 70vh;
+  }
+
+  .cart-logo{
+    font-size: 1rem;
+  }
+
+  .cart-logo h3{
+    font-size: 1rem;
+  }
+  
+  .cart-logo h2{
+    width: 14px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    
+  }
+
+  .logo{
+    font-size: 0.7rem;
+    color: pink;
+  }
+
+  .Navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .auth-button{
+    gap: 10px;
+  }
+
+  .auth-button h3{
+    font-size: 1rem;
+  }
+
+  .cart-card{
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 3rem;
+  }
+
+  .cart-card h2{
+    font-size: 0.7rem;
+  }
+
+  .cart-card p{
+    display: none;
+  }
+  
+  .cart-card img{
+    min-width: 14%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10pxt;
+  }
+  .cart-card h4{
+    color: green;
+  }
+
+  .cart-card h3{
+    font-size: 0.8rem;
+  }
+
+  .cart-total{
+    padding: 10px;
+    width: 75%;
+    background-color: floralwhite;
+  }
+
+  .register-form input{
+    width: 80%;
+  }
+
+  .all-btn{
+    color: goldenrod;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem;
+    font-size: 18px;
+  }
+  
 }
